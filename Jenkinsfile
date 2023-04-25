@@ -1,9 +1,9 @@
 pipeline {
-    agent { 
+    agent {
         node {
-            label 'jenkins-agent-goes-here'
+            label 'docker-agent-python'
             }
-      }
+    }
     triggers {
         pollSCM '*/5 * * * *'
     }
